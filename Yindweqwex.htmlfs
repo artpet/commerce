@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".slider").each(function () { // обрабатываем каждый слайдер
+                var obj = $(this);
+                $(obj).append("<div class='nav'></div>");
+                $(obj).find("li").each(function () {
+                    $(obj).find(".nav").append("<span rel='" + $(this).index() + "'></span>"); // добавляем блок навигации
+                    $(this).addClass("slider" + $(this).index());
+                });
+                $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
+            });
+        });
+        function sliderJS(obj, sl) { // slider function
+            var ul = $(sl).find("ul"); // находим блок
+            var bl = $(sl).find("li.slider" + obj); // находим любой из элементов блока
+            var step = $(bl).width(); // ширина объекта
+            $(ul).animate({marginLeft: "-" + step * obj}, 500); // 500 это скорость перемотки
+        }
+        $(document).on("click", ".slider .nav span", function () { // slider click navigate
+            var sl = $(this).closest(".slider"); // находим, в каком блоке был клик
+            $(sl).find("span").removeClass("on"); // убираем активный элемент
+            $(this).addClass("on"); // делаем активным текущий
+            var obj = $(this).attr("rel"); // узнаем его номер
+            sliderJS(obj, sl); // слайдим
+            return false;
+        });
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href="slider.js" rel="script" type="text/javascript">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <title>Home</title>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <p id="cart-top"><a href="">Shopping Cart</a> now in you cart 0 items</p>
+
+        <div id="logo">
+            <a href=""><img id="logo-img" src="images/small_operating-system-97849_640.png"></a>
+
+            <p><a href="">Sales Point</a><br><span><a href="">the best online store</a></span></p>
+        </div>
+        <div id="lang"></div>
+        <div id="menu-top">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="whats_new">What's New</a></li>
+                <li><a href="">Specials</a></li>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Delivery</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="slider-out">
+
+        <div id="slider-in" class="slider">
+            <ul id="sul">
+                <li><img src="images/banners/banner_slider1.jpg" alt=""></li>
+                <li><img src="images/banners/banner_slider2.jpg" alt=""></li>
+                <li><img src="images/banners/banner_slider3.jpg" alt=""></li>
+                <li><img src="images/banners/banner_slider4.jpg" alt=""></li>
+                <li><img src="images/banners/banner_slider5.jpg" alt=""></li>
+            </ul>
+            <div id="sdiv"></div>
+        </div>
+    </div>
+    <aside id="categories">
+        <p>Categories</p>
+        <ul>
+            <li><a href="">Sound devices</a></li>
+            <li><a href="">Video game consoles</a></li>
+            <li><a href="">Cell/mobile/wireless phones</a></li>
+            <li><a href="">Home security systems</a></li>
+            <li><a href="">Cameras</a></li>
+            <li><a href="">Home theater systems</a></li>
+            <li><a href="">TVs</a></li>
+            <li><a href="">Computers</a></li>
+            <li><a href="">Games/movies/music</a></li>
+            <li><a href="">Accessories</a></li>
+            <li><a href="">Office</a></li>
+            <li><a href="">House wears</a></li>
+        </ul>
+    </aside>
+    <main id="products" class="tbl">
+        <table>
+            <caption>Featured<span>Products</span></caption>
+            <tr>
+                <td><a href=""><img src="images/005.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+                <td><a href=""><img src="images/006.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+                <td><a href=""><img src="images/007.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+                <td><a href=""><img src="images/008.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+            </tr>
+            <tr>
+                <td><a href=""><img src="images/009.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+                <td><a href=""><img src="images/010.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+                <td><a href=""><img src="images/011.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+                <td><a href=""><img src="images/012.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+            </tr>
+            <tr>
+                <td><a href=""><img src="images/013.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+                <td><a href=""><img src="images/014.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span>
+                </a></td>
+                <td><a href=""><img src="images/015.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+                <td><a href=""><img src="images/190.jpg" alt="">
+
+                    <p>Best Product<br><span>1234$</span></p>
+                </a></td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <div id="foot-slider"></div>
+        <div id="foot-menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Specials</a></li>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Delivery</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+        <p id="rights">All rights reserved <span>&copy 2015</span></p>
+    </footer>
+</div>
+
+</body>
+</html>

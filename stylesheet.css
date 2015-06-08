@@ -1,0 +1,634 @@
+#wrapper {
+    width: 1000px;
+    height: 1600px;
+    border: 1px solid red;
+    font-family: 'Indie Flower', cursive;
+    left: 15%;
+    position: absolute;
+}
+
+header {
+    position: relative;
+    height: 175px;
+}
+
+#cart-top {
+    font-size: 13px;
+    float: right;
+    position: relative;
+    right: 17px;
+    margin: 27px;
+    padding: 0;
+}
+
+#cart-top a {
+    color: #0BB1E8;
+}
+
+#cart-top a:nth-child(2){
+    font-size: 16px;
+}
+#logo{
+    width: 450px;
+}
+
+#logo-img {
+    margin: 29px 0 0 46px;
+    padding: 0;
+}
+
+#logo p {
+    position: absolute;
+    left: 140px;
+    top: 35px;
+    width: 500px;
+    height: 70px;
+    margin: 0;
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 0.6em;
+
+}
+
+#logo p a {
+    color: #000;
+    text-decoration: none;
+}
+
+#logo p a:hover {
+    color: #0BB1E8;
+}
+
+#logo p span a {
+    color: #0BB1E8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#logo p span a:hover {
+    color: #000;
+}
+#login, #logged {
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    width: 287px;
+    height: 50px;
+    float: right;
+    margin-top:-72px;
+    margin-right: 30px;
+    background: linear-gradient(to top, #F2F2F2, #FFFFFF);
+}
+
+#login form input[type='text']{
+    width: 120px;
+}
+#login .login-btn{
+    border: none;
+    background: none;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 0;
+}
+#login .login-btn:hover{
+    color: #0BB1E8;
+}
+#login input{
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+}
+#login a {
+    color: #000;
+    margin-left: 90px;
+}
+
+#logged{
+    text-align: right;
+}
+#logged p{
+    margin:0 0 0 2px;
+}
+
+#logged a{
+    margin-right: 7px;
+    color: #0BB1E8;
+}
+
+#logged p, #logged a{
+    font-size: 15px;
+}
+
+
+#menu-top {
+    margin: -14px 30px 5px 30px;
+    width: 940px;
+    height: 41px;
+    padding: 0;
+
+}
+
+#menu-top ul {
+    list-style-type: none;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    padding: 0;
+    background: linear-gradient(to top, #F2F2F2, #FFFFFF);
+}
+
+#menu-top li {
+    font-size: 15px;
+    display: inline-block;
+    line-height: 41px;
+    text-align: center;
+    padding: 0 32px 0 32px;
+    margin: 5px 0 5px 0;
+}
+
+#menu-top li:nth-child(n+2) {
+    background: url("images/my/brd_top_menu1.gif") 0 5px no-repeat;
+}
+
+#menu-top a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-top a:hover {
+    color: #0BB1E8;
+}
+
+#slider-out {
+    margin: 10px 30px 0 30px;
+    height: 326px;
+    width: 938px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    background: linear-gradient(to top, #F2F2F2, #FFFFFF);
+}
+
+#slider-in {
+    margin: 7px;
+    height: 310px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+
+#categories {
+    position: relative;
+    height: 394px;
+    width: 248px;
+    float: left;
+    margin: 30px 30px 0 36px;
+}
+
+#categories p {
+    width: 225px;
+    padding: 0 0 0 18px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    background: linear-gradient(to top, #F2F2F2, #FFFFFF);
+    font-size: 16px;
+    margin-top: 0;
+}
+
+#categories ul {
+    list-style-image: url("images/my/list_marker.gif");
+    list-style-position: inside;
+    padding-left: 18px;
+}
+
+#categories li {
+    padding: 0;
+    margin: 0;
+    background: url("images/my/list_hline.gif") 0 18px repeat-x;
+}
+
+#categories a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#categories a:hover {
+    color: #0BB1E8;
+}
+
+#products {
+    position: relative;
+    height: 692px;
+    width: 650px;
+    float: right;
+    margin: 30px 30px 0 0;
+}
+
+.tbl caption {
+    font-size: 22px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 0;
+
+}
+
+.tbl caption span {
+    color: #0BB1E8;
+}
+
+.tbl table {
+    border-collapse: collapse;
+}
+
+.tbl tr:nth-child(n+2) td {
+    border-top: 1px dotted #D9D9D9;
+}
+
+.tbl tr td:nth-child(n+2) {
+    border-left: 1px dotted #D9D9D9;
+}
+
+#products td ,#products-new td{
+    width: 162px;
+    height: 222px;
+}
+
+#products td img, #products-new td img{
+    width: 140px;
+    height: 130px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#products p, #products-new p {
+    padding-left: 23px;
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+}
+
+#products p span, #products-new p span {
+    color: #0BB1E8;
+    font-weight: bold;
+}
+
+.tbl a {
+    text-decoration: none;
+}
+
+footer {
+    height: 316px;
+    position: relative;
+    margin-top: 800px;
+}
+
+#foot-slider {
+    height: 158px;
+    border: 1px solid olive;
+}
+
+#foot-menu {
+    height: 41px;
+    margin: 0 30px 0 30px;
+
+}
+
+#foot-menu ul {
+    list-style-type: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: linear-gradient(to top, #303739, #5E6C70);
+}
+
+#foot-menu li {
+    display: inline-block;
+    line-height: 41px;
+    margin: 0 13px 0 0;
+    padding: 0 17px 0 29px;
+}
+
+#foot-menu li:nth-child(n+2){
+    background: url("images/my/footer_border.gif") 0 15px no-repeat;
+}
+
+#foot-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+#foot-menu a:hover{
+    color: #0BB1E8;
+}
+#rights{
+    text-align: center;
+    line-height: 55px;
+    font-weight: bold;
+}
+/*--------------------Slider---------------------*/
+.slider {
+    z-index: 9;
+    width: 700px;
+    height: 290px;
+    overflow: hidden;
+    margin: 0 0 7px;
+    position: relative;
+}
+.slider ul,
+.slider li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.slider ul {
+    width: 9999px;
+}
+.slider ul li {
+    list-style-type: none;
+    float: left;
+    width: 673px;
+    height: 310px;
+}
+.slider .nav {
+    position: absolute;
+    left: 15px;
+    bottom: 12px;
+}
+.slider .nav span {
+    opacity: 0.9;
+    background: #fff;
+    margin: 0 8px 0 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    float: left;
+    box-shadow: 0 1px 2px #000;
+}
+.slider .nav span.on {
+    background: #2e9419;
+}
+/*---------------------Cart--------------------*/
+#cart-main{
+    margin: 30px 30px 30px 30px;
+}
+#cart-main table td{
+    padding: 0 5px 0 5px;
+}
+#cart-main table td a{
+    color: #000;
+}
+#cart-main table td a:hover{
+    color: #0BB1E8;
+}
+#cart-main table td:nth-child(1) {
+    width: 50px;
+    text-align: left;
+}
+#cart-main table td:nth-child(2){
+    width: 278px;
+    text-align: left;
+}
+
+#cart-main table td{
+    width: 60px;
+    text-align: right;
+}
+#cart-main table td img{
+    height: 40px;
+    width: 40px;
+}
+#cart-main input[type=submit]{
+    float: right;
+    font-size: 17px;
+}
+
+/*----------------------Add Form------------------*/
+#add-form{
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    background: linear-gradient(to top, #F2F2F2, #FFFFFF);
+    padding: 5px;
+    margin: 30px;
+}
+#add-form input, #add-form select{
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 7px;
+    width: 250px;
+    margin-bottom: 3px;
+}
+#add-form select{
+    width: 266px;
+}
+
+#add-form form label{
+    width: 170px;
+    margin-left: 7px;
+}
+
+#add-form .btn-adm-form{
+    width: 140px;
+}
+
+/*-------------------Add Table----------------------*/
+#add-table{
+    border: 1px solid #D9D9D9;
+    background: linear-gradient(to top, #F2F2F2, #FFFFFF);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 30px;
+    height: 600px;
+}
+#add-table .tbl{
+    width: 100%;
+}
+#add-table .tbl{
+
+}
+#add-table .tbl td:nth-child(1){
+    width: 320px;
+}
+#add-table .tbl td:nth-child(2){
+    width: 150px;
+}
+#add-table .tbl td:nth-child(3){
+    width: 200px;
+}
+
+#add-table .tbl td:nth-child(5), #add-table .tbl td:nth-child(4){
+    width: 60px;
+    text-align: right;
+}
+/*-------------------------Add Scroll Table-------------*/
+#add-table-scroll{
+    overflow: scroll;
+    height: 537px;
+}
+/*-----------------------------New Goods----------------*/
+#products-new{
+    margin: 30px 30px 0;
+
+}
+#products-new table{
+    padding: 40px;
+    width: 100%;
+}
+
+#products-new caption{
+    margin-left: 10px;
+}
+#new-foot{
+    margin-top: 0;
+}
+/*----------------------------Contacts-------------------*/
+#contacts {
+    margin: 30px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    background: linear-gradient(to top, #F2F2F2, #FFFFFF);
+    height: 707px;
+}
+#contacts div{
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+}
+#map{
+    height: 450px;
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+#working-time{
+    float: right;
+    height: 450px;
+    width: 313px;
+    position: relative;
+}
+
+#working-time p{
+    margin: 7px;
+    font-size: 20px;
+}
+
+.working-time-head{
+    color: #0BB1E8;
+}
+#contact-form{
+    height: 246px;
+    width: 313px;
+    position: absolute;
+    top: 672px;
+}
+#contact-form p{
+    margin: 7px;
+}
+.contact-form-btn{
+    font-family: 'Indie Flower', cursive;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    font-size: 15px;
+    margin: 7px;
+}
+.contact-form-btn:hover{
+    color: #0BB1E8;
+    cursor: pointer;
+}
+#contact-form form{
+    margin-left: 7px;
+}
+#contact-form form textarea{
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+}
+
+#contact-form form input[type='text'],#contact-form form input[type='email']{
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+}
+#contact-shops{
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    height: 246px;
+    width: 313px;
+    float: right;
+    margin-top: 7px;
+}
+#contact-shops p{
+    margin: 7px;
+}
+#contact-job{
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    height: 246px;
+    width: 279px;
+    position: absolute;
+    top: 665px;
+    left: 352px;
+    margin: 7px;
+}
+#contact-job p{
+    margin: 7px;
+}
+/*------------------------Registration------------------*/
+#registration{
+    margin: 30px;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    padding: 7px;
+    background: linear-gradient(to top, #F2F2F2, #FFFFFF);
+}
+#registration form{
+    margin-left: 7px;
+}
+#registration form input[type='text'],#registration form input[type='password'],#registration form input[type='email'] {
+    width: 206px;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+}
+
+.registration_correct{
+    /*display: none;*/
+    float: right;
+    margin: 0 600px 0 0;
+    height:  30px;
+    width: 90px;
+}
+
+.registration_correct p{
+    height: 26px;
+    padding: 0;
+    margin: 0;
+}
+
+.registration_correct img{
+    height: 19px;
+    margin-right: 4px;
+}
+/*------------------------My Account---------------------*/
+#my-account{
+    margin: 30px;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    background: linear-gradient(to top, #F2F2F2, #FFFFFF);
+}
+
+#my-account form{
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    width: 160px;
+    padding: 7px;
+    float: left;
+    margin: 7px;
+}
+#my-account table{
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    padding: 7px;
+    width: 740px;
+    margin: 7px;
+}
+
+
