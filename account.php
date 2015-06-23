@@ -1,22 +1,25 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">
-    <script src="inc/jquery.min.js" type="text/javascript"></script>
-    <meta charset="UTF-8">
-    <title>My account</title>
-</head>
-<body>
 <?php
 include 'inc/header.inc.php';
-if ($inc_page === logged)
+if (($inc_page === logged) or ($inc_page === admin))
     include'inc/account.inc.php';
 else {
     include'inc/signup.inc.php';
-}
-?>
+}?>
+<script type="text/javascript">
 
-<? include 'inc/footer.inc.php' ?>
-</body>
-</html>
+    $(document).ready(function() {
+        document.title = 'My account';
+        $("#foot-slider").owlCarousel({
+
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+            items : 6,
+            itemsDesktop : [1499,3],
+            itemsDesktopSmall : [979,3]
+
+        });
+    });
+
+
+</script>
+<?include 'inc/footer.inc.php' ?>

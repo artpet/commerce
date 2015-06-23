@@ -1,4 +1,9 @@
 <?php
+include 'classes/User.class.php';
+$db = new DB();
+$sel = $db->selectCategory($_GET['categories']);
+foreach ($sel as $item)
+    $category = $item['category'];
 ?>
     <!doctype html>
     <html lang="en">
@@ -10,13 +15,12 @@
     </head>
 <body>
 <? include 'inc/header.inc.php' ?>
-<?php
-$db = new DB();
-$sel = $db->selectCategory($_GET['categories']);
-foreach ($sel as $item)
-    $category = $item['category'];
-?>
+
     <main id="products-new" class="tbl">
+        <div id="goods-msg">
+            <img>
+            <p></p>
+        </div>
         <table>
             <caption><?= $category ?></caption>
             <?php
@@ -52,3 +56,23 @@ foreach ($sel as $item)
         </table>
     </main>
 <? include 'inc/footer.inc.php' ?>
+<script>
+    $(document).ready(function () {
+        $('#products-new').find('.buy_now').on('click', function () {
+            var row = $(this).parent().prev().find('a').attr('href');
+            var reg = /^(index)\.(php)\?(goods)\_(detail)\=(\d{1,})/;//index.php?goods_detail=$id"
+            var id = row.replace(reg, "$5"); //id для отправки в корзину
+            addToCart(id,'addgoods'); //отправляем в корзину
+        });
+        $("#foot-slider").owlCarousel({
+
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+            items : 6,
+            itemsDesktop : [1499,3],
+            itemsDesktopSmall : [979,3]
+
+        });
+    });
+
+</script>

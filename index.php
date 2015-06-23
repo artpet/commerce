@@ -7,17 +7,11 @@ if ($_GET['view']) {
         case whats_new:
             include 'new_goods.php';
             break;
-        case specials:
-            break;
         case account:
             include 'account.php';
             break;
-        case delivery:
-            break;
         case contacts:
             include 'contacts.php';
-            break;
-        case about_us:
             break;
         case cart:
             include 'cart.php';
@@ -28,6 +22,21 @@ if ($_GET['view']) {
         case logout:
             include 'logout.php';
             break;
+        case special:
+            include 'special.php';
+            break;
+        case admin_panel:
+            include 'admin.php';
+            break;
+        case admin_orders:
+            include 'orders.php';
+            break;
+        case about:
+            include 'about.php';
+            break;
+        case delivery:
+            include 'delivery.php';
+            break;
         default:
             include 'home.php';
     }
@@ -37,10 +46,13 @@ if ($_GET['view']) {
 } elseif ($_GET['delete_from_cart']) {
     include 'inc/deletefromcart.inc.php';
     exit;
-}elseif ($_GET['categories']){
+} elseif ($_GET['categories']) {
     include 'categories.php';
     exit;
-} else {
+} elseif ($_GET['goods_detail']){
+    include 'goods_detail.php';
+    exit;
+}else {
     include 'home.php';
 }
 

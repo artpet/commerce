@@ -10,26 +10,11 @@ class User
     protected $_name;
     protected $_password;
     protected $_salt;
+    protected $_base;
 
     function __construct($id = 0)
     {
-        $this->_id = $id;
         $this->_db = new DB();
-    }
-
-    function setPassword()
-    {
-
-    }
-
-    function setName()
-    {
-
-    }
-
-    function getUserName()
-    {
-
     }
 
     function newUser($registration_name, $registration_email, $registration_password)
@@ -60,7 +45,8 @@ class User
         if ($res = $this->_db->checkLogin($userLogin, $userPassword)) {
             session_start();
             $_SESSION['user_login'] = $userLogin;
-            $_SESSION['user_hash'] = $res;
+            $_SESSION['user_hash'] = $res[name];
+            $_SESSION['user_id'] = $res[id];
             return true;
         } else {
             return false;

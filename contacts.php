@@ -1,17 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contacts</title>
-    <script type="text/javascript" charset="utf-8"
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_qWazOozo7_dsvK4a4CLLJ-HXsxZLOX4&width=600&height=450&id=map"></script>
-    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">
-</head>
-<body>
 <?include 'inc/header.inc.php' ?>
+<body>
 <div id="contacts">
     <div id="map"></div>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FiP9y_ZU4V3xmZcL7Wfx_2WDwk_DUTLt&width=600&height=450&id=map"></script>
     <div id="working-time">
         <p class="working-time-head">Call-Center</p>
 
@@ -59,14 +50,25 @@
     </div>
     <div id="contact-job">
         <p class="working-time-head">Careers</p>
-        <p>We are looking for a Junior PHP developer to join our team. We work in great atmosphere and value people who want to grow professionally and share their experience with us.</p>
+        <p>We are looking for a Junior PHP developer join our team. We work in great atmosphere and value people who want to grow professionally and share their experience with us.</p>
         <p>Send your CV to <a href="mailto:hr@some.mail.com">hr@some.mail.com</a></p>
     </div>
 </div>
-
-<?include 'inc/footer.inc.php' ?>
-
 </body>
-</html>
+<?include 'inc/footer.inc.php' ?>
+<script>
+    $(document).ready(function() {
+        document.title = 'Contacts';
+        $("#foot-slider").owlCarousel({
+
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+            items : 6,
+            itemsDesktop : [1499,3],
+            itemsDesktopSmall : [979,3]
+
+        });
+    });
+</script>
 <?php
 

@@ -1,55 +1,36 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".slider").each(function () { // обрабатываем каждый слайдер
-                var obj = $(this);
-                $(obj).append("<div class='nav'></div>");
-                $(obj).find("li").each(function () {
-                    $(obj).find(".nav").append("<span rel='" + $(this).index() + "'></span>"); // добавляем блок навигации
-                    $(this).addClass("slider" + $(this).index());
-                });
-                $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
-            });
-        });
-        function sliderJS(obj, sl) { // slider function
-            var ul = $(sl).find("ul"); // находим блок
-            var bl = $(sl).find("li.slider" + obj); // находим любой из элементов блока
-            var step = $(bl).width(); // ширина объекта
-            $(ul).animate({marginLeft: "-" + step * obj}, 500); // 500 это скорость перемотки
-        }
-        $(document).on("click", ".slider .nav span", function () { // slider click navigate
-            var sl = $(this).closest(".slider"); // находим, в каком блоке был клик
-            $(sl).find("span").removeClass("on"); // убираем активный элемент
-            $(this).addClass("on"); // делаем активным текущий
-            var obj = $(this).attr("rel"); // узнаем его номер
-            sliderJS(obj, sl); // слайдим
-            return false;
-        });
-    </script>
-    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link href="slider.js" rel="script" type="text/javascript">
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">
-    <title>Home</title>
-</head>
-<body>
-<?include 'inc/header.inc.php'?>
-    <div id="slider-out">
+<? include 'inc/header.inc.php' ?>
+    <body>
+    <div id="goods-msg">
+        <img>
+        <p></p>
+    </div>
 
+    <div id="slider-out">
         <div id="slider-in" class="slider">
-            <ul id="sul">
-                <li><img src="images/banners/banner_slider1.jpg" alt=""></li>
-                <li><img src="images/banners/banner_slider2.jpg" alt=""></li>
-                <li><img src="images/banners/banner_slider3.jpg" alt=""></li>
-                <li><img src="images/banners/banner_slider4.jpg" alt=""></li>
-                <li><img src="images/banners/banner_slider5.jpg" alt=""></li>
-            </ul>
-            <div id="sdiv"></div>
+            <!-- Start WOWSlider.com BODY section -->
+            <div id="wowslider-container1">
+                <div class="ws_images"><ul>
+                        <li><img src="data1/images/banner_slider1.jpg" alt="50% Discount Insanity" title="50% Discount Insanity" id="wows1_0"/></li>
+                        <li><img src="data1/images/banner_slider2.jpg" alt="Premium Products" title="Premium Products" id="wows1_1"/></li>
+                        <li><img src="data1/images/banner_slider3.jpg" alt="Exclusive Offer" title="Exclusive Offer" id="wows1_2"/></li>
+                        <li><a href="http://wowslider.com/vi"><img src="data1/images/banner_slider4.jpg" alt="image slider jquery" title="Red Hot Stuff" id="wows1_3"/></a></li>
+                        <li><img src="data1/images/banner_slider5.jpg" alt="Summertime Discount" title="Summertime Discount" id="wows1_4"/></li>
+                    </ul></div>
+                <div class="ws_bullets"><div>
+                        <a href="#" title="50% Discount Insanity"><span><img src="data1/tooltips/banner_slider1.jpg" alt="50% Discount Insanity"/>1</span></a>
+                        <a href="#" title="Premium Products"><span><img src="data1/tooltips/banner_slider2.jpg" alt="Premium Products"/>2</span></a>
+                        <a href="#" title="Exclusive Offer"><span><img src="data1/tooltips/banner_slider3.jpg" alt="Exclusive Offer"/>3</span></a>
+                        <a href="#" title="Red Hot Stuff"><span><img src="data1/tooltips/banner_slider4.jpg" alt="Red Hot Stuff"/>4</span></a>
+                        <a href="#" title="Summertime Discount"><span><img src="data1/tooltips/banner_slider5.jpg" alt="Summertime Discount"/>5</span></a>
+                    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">angular carousel</a> by WOWSlider.com v8.1m</div>
+                <div class="ws_shadow"></div>
+            </div>
+            <script type="text/javascript" src="engine1/wowslider.js"></script>
+            <script type="text/javascript" src="engine1/script.js"></script>
+            <!-- End WOWSlider.com BODY section -->
         </div>
     </div>
+    <div id="home-middle-block">
     <aside id="categories">
         <p>Categories</p>
         <ul>
@@ -68,62 +49,59 @@
         </ul>
     </aside>
     <main id="products" class="tbl">
+
         <table>
             <caption>Featured<span>Products</span></caption>
-            <tr>
-                <td><a href=""><img src="images/005.jpg" alt="">
+            <?php
+            $order = new Order();
+            $items = $order->mostPopular();
+            $db = new DB();
+            $count_tr = 1;
+            foreach ($items as $item) {
+                $id = $item[commodity];
+                $goods = $db->getGoods($id);
+                foreach ($goods as $commodity) {
+                    $name = $commodity[name];
+                    $img = $commodity[img];
+                    $price = $commodity[price];
+                }
+                switch ($count_tr) {
+                    case 1:
+                        echo '<tr>';
+                        include 'inc/label.inc.php';
+                        break;
+                    case 2:
+                        include 'inc/label.inc.php';
+                        break;
+                    case 3:
+                        include 'inc/label.inc.php';
+                        echo '</tr>';
+                        $count_tr = 1;
+                        break;
+                }
+            }
+            ?>
 
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-                <td><a href=""><img src="images/006.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-                <td><a href=""><img src="images/007.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-                <td><a href=""><img src="images/008.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-            </tr>
-            <tr>
-                <td><a href=""><img src="images/009.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-                <td><a href=""><img src="images/010.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-                <td><a href=""><img src="images/011.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-                <td><a href=""><img src="images/012.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-            </tr>
-            <tr>
-                <td><a href=""><img src="images/013.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-                <td><a href=""><img src="images/014.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span>
-                </a></td>
-                <td><a href=""><img src="images/015.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-                <td><a href=""><img src="images/190.jpg" alt="">
-
-                    <p>Best Product<br><span>1234$</span></p>
-                </a></td>
-            </tr>
         </table>
     </main>
-<? include 'inc/footer.inc.php'?>
+        </div>
+<?include 'inc/footer.inc.php'?>
+    <script>
+        $(document).ready(function () {
+            $('#products').find('.buy_now').on('click', function () {
+                var row = $(this).parent().prev().find('a').attr('href');
+                var reg = /^(index)\.(php)\?(goods)\_(detail)\=(\d{1,})/;//index.php?goods_detail=$id"
+                var id = row.replace(reg, "$5"); //id для отправки в корзину
+                addToCart(id,'addgoods'); //отправляем в корзину
+            });
+            $("#foot-slider").owlCarousel({
+
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+                items : 6,
+                itemsDesktop : [1499,3],
+                itemsDesktopSmall : [979,3]
+
+            });
+        });
+    </script>

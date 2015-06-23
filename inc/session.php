@@ -1,13 +1,15 @@
 <?php
-include 'classes/User.class.php';
+require_once 'classes/User.class.php';
 session_start();
 
 if ((isset($_SESSION['user_login'])) and isset($_SESSION['user_hash'])) {
     $db = new DB();
-    if ($db->checkSession($_SESSION['user_login'], $_SESSION['user_hash'])) {
+    if (($db->checkSession($_SESSION['user_login'], $_SESSION['user_hash']))==0) {
         $inc_page = logged;
 
-    } else {
+    } elseif(($db->checkSession($_SESSION['user_login'], $_SESSION['user_hash']))==1) {
+        $inc_page = admin;
+    }else{
         $inc_page = unlogged;
     }
 }

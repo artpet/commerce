@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
-    <title>Cart</title>
-</head>
-<body>
-<? include 'inc/header.inc.php';
+
+<?include 'inc/header.inc.php';
 $db = new DB();
 ?>
+<body>
+<div id="goods-msg">
+    <img>
+    <p></p>
+</div>
 <aside id="categories">
     <p>Categories</p>
     <ul>
@@ -28,7 +25,7 @@ $db = new DB();
     </ul>
 </aside>
 <div id="cart-main">
-    <form>
+    <form action="ordercontroller.php" method="post">
         <table class="tbl">
             <caption>Your <span>order</span></caption>
 
@@ -54,32 +51,40 @@ $db = new DB();
                 }
                 $sum = $value * $price;
                 $sumof += $sum;
-                $sumitems+=$value;
+                $sumitems += $value;
                 echo <<<LABEL
                 <tr>
                     <td>$count</td>
-                    <td><a href="$id">$name</a></td>
-                    <td>$value</td>
-                    <td>$price</td>
-                    <td>$sum</td>
-                    <td><a href="index.php?delete_from_cart=$id"><img alt="Delete item" title="Delete item" src="images/my/trash.png"></a></td>
+                    <td><a href="index.php?goods_detail=$id">$name</a></td>
+                    <td><img class="cart-minus" src="images/minus.png"><span>$value</span><img class="cart-plus" src="images/plus.png"></td>
+                    <td><span>$price</span></td>
+                    <td><span>$sum</span></td>
+                    <td><img class="cart-delete" alt="Delete item" title="Delete item" src="images/my/trash.png"></a></td>
                 </tr>
 LABEL;
             }
             ?>
-
             <tr>
                 <td></td>
                 <td>All</td>
-                <td><?=$sumitems?></td>
+                <td><span><?= $sumitems ?></span></td>
                 <td></td>
-                <td><?= $sumof ?></td>
+                <td><span><?= $sumof ?></span></td>
             </tr>
-
         </table>
         <input class="contact-form-btn" type="submit" value="Confirm">
     </form>
 </div>
+<script>$(document).ready(function () {
+     changeQuantityInCart();
+        $("#foot-slider").owlCarousel({
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+            items : 6,
+            itemsDesktop : [1499,3],
+            itemsDesktopSmall : [979,3]
+        });
+    });
+</script>
 <? include 'inc/footer.inc.php' ?>
 </body>
 </html>
