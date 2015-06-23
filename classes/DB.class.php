@@ -4,10 +4,12 @@ class DB
 {
     public $_db;
 
+
     function __construct()
     {
+
         try {
-            $this->_db = new PDO('mysql: host=us-cdbr-iron-east-02.cleardb.net; dbname=heroku_592fc3ecec18124', 'bf738e443f27f3', '1100c26f');
+            $this->_db = new PDO('mysql: host=us-cdbr-iron-east-02.cleardb.net; dbname=heroku_592fc3ecec18124', 'bf738e443f27f3@us-cdbr-iron-east-02.cleardb.net', '1100c26f');
         } catch (PDOException $e) {
             die("Error: " . $e->getMessage());
         }
