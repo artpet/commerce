@@ -6,7 +6,7 @@ class Order
 
     function __construct()
     {
-        $this->_db = new PDO('mysql: host=us-cdbr-iron-east-02.cleardb.net; dbname=heroku_592fc3ecec18124', 'bf738e443f27f3', '1100c26f!');
+        $this->_db = new PDO('mysql: host=us-cdbr-iron-east-02.cleardb.net; dbname=heroku_592fc3ecec18124', 'bf738e443f27f3', '1100c26f');
     }
 
     function db2Arr($data)
