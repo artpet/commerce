@@ -22,7 +22,7 @@ class DB
 
     function addNewGoods($commodity_name, $commodity_category, $commodity_file, $commodity_price, $commodity_quantity)
     {
-        //$commodity_name = $this->_db->quote($commodity_name);
+        ///$commodity_name = $this->_db->quote($commodity_name);
         //$commodity_category = $this->_db->quote($commodity_category);
         //$commodity_file = $this->_db->quote($commodity_file);
         //$commodity_price = $this->_db->quote($commodity_price);

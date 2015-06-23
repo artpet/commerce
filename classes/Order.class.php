@@ -19,7 +19,7 @@ class Order
 
     function addNewOrder($u, $s, $item_in_cart)
     {
-        //$u = $this->_db->quote($u);
+        ///$u = $this->_db->quote($u);
         //$s = $this->_db->quote($s);
         $order_number = $this->orderId();
         $arr = $item_in_cart;

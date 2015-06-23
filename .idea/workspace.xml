@@ -117,45 +117,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DB.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DB.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/DB.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21462639" vertical-offset="0" max-vertical-offset="4290">
-              <caret line="9" column="139" selection-start-line="9" selection-start-column="139" selection-end-line="9" selection-end-column="139" />
+            <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="4290">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
-                <marker date="1435076622000" expanded="true" signature="892:1059" placeholder="INSERT INTO ..." />
-                <marker date="1435076622000" expanded="true" signature="1896:1970" placeholder="SELECT id, n..goods..." />
-                <marker date="1435076622000" expanded="true" signature="2318:2446" placeholder="SELECT a.nam..goods..." />
-                <marker date="1435076622000" expanded="true" signature="2794:2841" placeholder="SELECT * FRO..goods..." />
-                <marker date="1435076622000" expanded="true" signature="3514:3646" placeholder="INSERT INTO ..." />
-                <marker date="1435076622000" expanded="true" signature="4217:4269" placeholder="SELECT ${$db..users..." />
-                <marker date="1435076622000" expanded="true" signature="4750:4804" placeholder="SELECT name,..goods..." />
-                <marker date="1435076622000" expanded="true" signature="5329:5386" placeholder="SELECT passw..users..." />
-                <marker date="1435076622000" expanded="true" signature="6058:6111" placeholder="UPDATE users..." />
-                <marker date="1435076622000" expanded="true" signature="6829:6911" placeholder="SELECT name,..users..." />
-                <marker date="1435076622000" expanded="true" signature="7545:7578" placeholder="SELECT id, c..category..." />
-                <marker date="1435076622000" expanded="true" signature="7968:8014" placeholder="SELECT categ..category..." />
-                <marker date="1435076622000" expanded="true" signature="8392:8448" placeholder="SELECT id, p..users..." />
-                <marker date="1435076622000" expanded="true" signature="8925:8986" placeholder="UPDATE users..." />
-                <marker date="1435076622000" expanded="true" signature="9218:9275" placeholder="SELECT id,na..goods..." />
+                <marker date="1435079310000" expanded="true" signature="893:1060" placeholder="INSERT INTO ..." />
+                <marker date="1435079310000" expanded="true" signature="1897:1971" placeholder="SELECT id, n..goods..." />
+                <marker date="1435079310000" expanded="true" signature="2319:2447" placeholder="SELECT a.nam..goods..." />
+                <marker date="1435079310000" expanded="true" signature="2795:2842" placeholder="SELECT * FRO..goods..." />
+                <marker date="1435079310000" expanded="true" signature="3515:3647" placeholder="INSERT INTO ..." />
+                <marker date="1435079310000" expanded="true" signature="4218:4270" placeholder="SELECT ${$db..users..." />
+                <marker date="1435079310000" expanded="true" signature="4751:4805" placeholder="SELECT name,..goods..." />
+                <marker date="1435079310000" expanded="true" signature="5330:5387" placeholder="SELECT passw..users..." />
+                <marker date="1435079310000" expanded="true" signature="6059:6112" placeholder="UPDATE users..." />
+                <marker date="1435079310000" expanded="true" signature="6830:6912" placeholder="SELECT name,..users..." />
+                <marker date="1435079310000" expanded="true" signature="7546:7579" placeholder="SELECT id, c..category..." />
+                <marker date="1435079310000" expanded="true" signature="7969:8015" placeholder="SELECT categ..category..." />
+                <marker date="1435079310000" expanded="true" signature="8393:8449" placeholder="SELECT id, p..users..." />
+                <marker date="1435079310000" expanded="true" signature="8926:8987" placeholder="UPDATE users..." />
+                <marker date="1435079310000" expanded="true" signature="9219:9276" placeholder="SELECT id,na..goods..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Order.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/Order.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="1725">
-              <caret line="8" column="135" selection-start-line="8" selection-start-column="135" selection-end-line="8" selection-end-column="135" />
+            <state vertical-scroll-proportion="0.5007949" vertical-offset="0" max-vertical-offset="1725">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding>
-                <marker date="1435076618000" expanded="true" signature="735:776" placeholder="SELECT price..goods..." />
-                <marker date="1435076618000" expanded="true" signature="1053:1209" placeholder="INSERT INTO ..." />
-                <marker date="1435076618000" expanded="true" signature="1559:1585" placeholder="SELECT MAX(i..orders..." />
-                <marker date="1435076618000" expanded="true" signature="1985:2141" placeholder="SELECT a.ord..orders..." />
-                <marker date="1435076618000" expanded="true" signature="2489:2692" placeholder="SELECT a.ord..orders..." />
-                <marker date="1435076618000" expanded="true" signature="3002:3060" placeholder="UPDATE order..." />
-                <marker date="1435076618000" expanded="true" signature="3334:3439" placeholder="SELECT commo..orders..." />
+                <marker date="1435079314000" expanded="true" signature="736:777" placeholder="SELECT price..goods..." />
+                <marker date="1435079314000" expanded="true" signature="1054:1210" placeholder="INSERT INTO ..." />
+                <marker date="1435079314000" expanded="true" signature="1560:1586" placeholder="SELECT MAX(i..orders..." />
+                <marker date="1435079314000" expanded="true" signature="1986:2142" placeholder="SELECT a.ord..orders..." />
+                <marker date="1435079314000" expanded="true" signature="2490:2693" placeholder="SELECT a.ord..orders..." />
+                <marker date="1435079314000" expanded="true" signature="3003:3061" placeholder="UPDATE order..." />
+                <marker date="1435079314000" expanded="true" signature="3335:3440" placeholder="SELECT commo..orders..." />
               </folding>
             </state>
           </provider>
@@ -215,8 +215,8 @@
         <option value="$PROJECT_DIR$/inc/signup.inc.php" />
         <option value="$PROJECT_DIR$/contacts.php" />
         <option value="$PROJECT_DIR$/inc/footer.inc.php" />
-        <option value="$PROJECT_DIR$/classes/Order.class.php" />
         <option value="$PROJECT_DIR$/classes/DB.class.php" />
+        <option value="$PROJECT_DIR$/classes/Order.class.php" />
       </list>
     </option>
   </component>
@@ -834,42 +834,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Order.class.php">
+    <entry file="file://$PROJECT_DIR$/classes/DB.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="1725">
-          <caret line="8" column="135" selection-start-line="8" selection-start-column="135" selection-end-line="8" selection-end-column="135" />
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="4290">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
-            <marker date="1435076618000" expanded="true" signature="735:776" placeholder="SELECT price..goods..." />
-            <marker date="1435076618000" expanded="true" signature="1053:1209" placeholder="INSERT INTO ..." />
-            <marker date="1435076618000" expanded="true" signature="1559:1585" placeholder="SELECT MAX(i..orders..." />
-            <marker date="1435076618000" expanded="true" signature="1985:2141" placeholder="SELECT a.ord..orders..." />
-            <marker date="1435076618000" expanded="true" signature="2489:2692" placeholder="SELECT a.ord..orders..." />
-            <marker date="1435076618000" expanded="true" signature="3002:3060" placeholder="UPDATE order..." />
-            <marker date="1435076618000" expanded="true" signature="3334:3439" placeholder="SELECT commo..orders..." />
+            <marker date="1435079310000" expanded="true" signature="893:1060" placeholder="INSERT INTO ..." />
+            <marker date="1435079310000" expanded="true" signature="1897:1971" placeholder="SELECT id, n..goods..." />
+            <marker date="1435079310000" expanded="true" signature="2319:2447" placeholder="SELECT a.nam..goods..." />
+            <marker date="1435079310000" expanded="true" signature="2795:2842" placeholder="SELECT * FRO..goods..." />
+            <marker date="1435079310000" expanded="true" signature="3515:3647" placeholder="INSERT INTO ..." />
+            <marker date="1435079310000" expanded="true" signature="4218:4270" placeholder="SELECT ${$db..users..." />
+            <marker date="1435079310000" expanded="true" signature="4751:4805" placeholder="SELECT name,..goods..." />
+            <marker date="1435079310000" expanded="true" signature="5330:5387" placeholder="SELECT passw..users..." />
+            <marker date="1435079310000" expanded="true" signature="6059:6112" placeholder="UPDATE users..." />
+            <marker date="1435079310000" expanded="true" signature="6830:6912" placeholder="SELECT name,..users..." />
+            <marker date="1435079310000" expanded="true" signature="7546:7579" placeholder="SELECT id, c..category..." />
+            <marker date="1435079310000" expanded="true" signature="7969:8015" placeholder="SELECT categ..category..." />
+            <marker date="1435079310000" expanded="true" signature="8393:8449" placeholder="SELECT id, p..users..." />
+            <marker date="1435079310000" expanded="true" signature="8926:8987" placeholder="UPDATE users..." />
+            <marker date="1435079310000" expanded="true" signature="9219:9276" placeholder="SELECT id,na..goods..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/DB.class.php">
+    <entry file="file://$PROJECT_DIR$/classes/Order.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21462639" vertical-offset="0" max-vertical-offset="4290">
-          <caret line="9" column="139" selection-start-line="9" selection-start-column="139" selection-end-line="9" selection-end-column="139" />
+        <state vertical-scroll-proportion="0.5007949" vertical-offset="0" max-vertical-offset="1725">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
-            <marker date="1435076622000" expanded="true" signature="892:1059" placeholder="INSERT INTO ..." />
-            <marker date="1435076622000" expanded="true" signature="1896:1970" placeholder="SELECT id, n..goods..." />
-            <marker date="1435076622000" expanded="true" signature="2318:2446" placeholder="SELECT a.nam..goods..." />
-            <marker date="1435076622000" expanded="true" signature="2794:2841" placeholder="SELECT * FRO..goods..." />
-            <marker date="1435076622000" expanded="true" signature="3514:3646" placeholder="INSERT INTO ..." />
-            <marker date="1435076622000" expanded="true" signature="4217:4269" placeholder="SELECT ${$db..users..." />
-            <marker date="1435076622000" expanded="true" signature="4750:4804" placeholder="SELECT name,..goods..." />
-            <marker date="1435076622000" expanded="true" signature="5329:5386" placeholder="SELECT passw..users..." />
-            <marker date="1435076622000" expanded="true" signature="6058:6111" placeholder="UPDATE users..." />
-            <marker date="1435076622000" expanded="true" signature="6829:6911" placeholder="SELECT name,..users..." />
-            <marker date="1435076622000" expanded="true" signature="7545:7578" placeholder="SELECT id, c..category..." />
-            <marker date="1435076622000" expanded="true" signature="7968:8014" placeholder="SELECT categ..category..." />
-            <marker date="1435076622000" expanded="true" signature="8392:8448" placeholder="SELECT id, p..users..." />
-            <marker date="1435076622000" expanded="true" signature="8925:8986" placeholder="UPDATE users..." />
-            <marker date="1435076622000" expanded="true" signature="9218:9275" placeholder="SELECT id,na..goods..." />
+            <marker date="1435079314000" expanded="true" signature="736:777" placeholder="SELECT price..goods..." />
+            <marker date="1435079314000" expanded="true" signature="1054:1210" placeholder="INSERT INTO ..." />
+            <marker date="1435079314000" expanded="true" signature="1560:1586" placeholder="SELECT MAX(i..orders..." />
+            <marker date="1435079314000" expanded="true" signature="1986:2142" placeholder="SELECT a.ord..orders..." />
+            <marker date="1435079314000" expanded="true" signature="2490:2693" placeholder="SELECT a.ord..orders..." />
+            <marker date="1435079314000" expanded="true" signature="3003:3061" placeholder="UPDATE order..." />
+            <marker date="1435079314000" expanded="true" signature="3335:3440" placeholder="SELECT commo..orders..." />
           </folding>
         </state>
       </provider>
