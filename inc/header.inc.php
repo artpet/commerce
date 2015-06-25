@@ -6,21 +6,14 @@ require_once 'classes/Order.class.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="../js/lib.js"></script>
-    <!-- Start WOWSlider.com HEAD section -->
-    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
-    <!-- End WOWSlider.com HEAD section -->
-    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     <link href="slider.js" rel="script" type="text/javascript">
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">
-    <!-- Important Owl stylesheet -->
-    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-
-    <!-- Default Theme -->
-    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-
-    <!-- Include js plugin -->
     <script src="owl-carousel/owl.carousel.js"></script>
     <title>Home</title>
 </head>
